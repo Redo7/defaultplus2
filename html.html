@@ -1,0 +1,248 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<div class="main-container absolute"></div>
+<live-preview class="animate__animated animate__fadeInDown">
+    <div>
+        <i class="fa-regular fa-comments"></i>
+        <live-preview-text>
+            <p class="live-preview-title">Live preview is enabled! </p>
+            <p class="live-preview-subtitle">Disable it from the widget settings before use!</p>
+        </live-preview-text>
+    </div>
+</live-preview>
+<script src="https://cdn.redo.graphics/testButtons.js"></script>
+<templates class="hide">
+    <update-notification>
+        <update-notification-container version="${newVersion}">
+            <status class="${className} animate__animated ${animationIn}">${status}</status>
+        </update-notification-container>
+    </update-notification>
+    <!-- Message : Type A -->
+    <regular>
+        <div data-sender="${uId}" data-msgId="${msgId}" id="msg-${totalMessages}" class="chat-message flex ${userRole} animate__animated ${animationIn}">
+            <div class="reply-container relative" color-source="{mentionColorSource}" style="--i: 1">
+                <div class="reply ${replyStyle}">
+                    <div class="reply-wrapper" style="--i: 4">
+                        <p>${replyIcon}&nbsp;Replying to ${replyTo}: ${replyBody}</p>
+                    </div>
+                    <div class="reply-dot absolute" style="--i: 3"></div>
+                    <div class="reply-dot absolute" style="--i: 2"></div>
+                </div>
+            </div>
+            <message-box class="flex">
+                <role class="flex center ${roleIconStyle}">${roleIcon}</role>
+                <main class="relative flex flex-column">
+                    <user-container class="flex" style="--color: ${color};">
+                        <username data-color="{usernameColorSource}">${username}</username>
+                        <badge-container class="${badgeStyle}">${badges}</badge-container>
+                        <pronouns class="${pronounStyle}">${pronoun}</pronouns>
+                    </user-container>
+                    <separator class="msg absolute ${roleIconStyle}"></separator>
+                    <message class="${emoteOnly}">${message}</message>
+                </main>
+            </message-box>
+        </div>
+    </regular>
+    <!-- Message : Type B -->
+    <compact>
+        <div data-sender="${uId}" data-msgId="${msgId}" id="msg-${totalMessages}" class="chat-message flex ${userRole} animate__animated ${animationIn}">
+            <div class="reply-container compact relative" color-source="{mentionColorSource}" style="--i: 1">
+                <div class="reply ${replyStyle}">
+                    <div class="reply-wrapper" style="--i: 4">
+                        <p>${replyIcon}&nbsp;Replying to ${replyTo}: ${replyBody}</p>
+                    </div>
+                    <div class="reply-dot absolute" style="--i: 3"></div>
+                    <div class="reply-dot absolute" style="--i: 2"></div>
+                </div>
+            </div>
+            <message-box-compact>
+                <user-container class="compact" style="--color: ${color};">
+                    <badge-container class="${badgeStyle}">${badges}</badge-container>
+                    <compact-role class="flex center ${roleIconStyle}">${roleIcon}</compact-role>
+                    <username data-color="{usernameColorSource}" >${username}</username>
+                    <pronouns class="${pronounStyle}">${pronoun}</pronouns>
+                    <separator class="inline ${roleIconStyle}"></separator>
+                </user-container>
+                <message class="compact ${emoteOnly}">${message}</message>
+            </message-box-compact>
+        </div>
+    </compact>
+    <!-- Message : Type C -->
+    <compact-stacked>
+        <div data-sender="${uId}" data-msgId="${msgId}" id="msg-${totalMessages}" class="chat-message flex ${userRole} animate__animated ${animationIn}">
+            <div class="reply-container compact relative" color-source="{mentionColorSource}" style="--i: 1">
+                <div class="reply ${replyStyle}">
+                    <div class="reply-wrapper" style="--i: 4">
+                        <p>${replyIcon}&nbsp;Replying to ${replyTo}: ${replyBody}</p>
+                    </div>
+                    <div class="reply-dot absolute" style="--i: 3"></div>
+                    <div class="reply-dot absolute" style="--i: 2"></div>
+                </div>
+            </div>
+            <message-box-compact>
+                <user-container class="flex" style="--color: ${color};">
+                    <badge-container class="${badgeStyle}">${badges}</badge-container>
+                    <compact-role class="flex center ${roleIconStyle}">${roleIcon}</compact-role>
+                    <username data-color="{usernameColorSource}">${username}</username>
+                    <separator class="inline ${roleIconStyle}"></separator>
+                    <pronouns class="${pronounStyle}">${pronoun}</pronouns>
+                </user-container>
+                <message class="compact stacked ${emoteOnly}">${message}</message>
+            </message-box-compact>
+        </div>
+    </compact-stacked>
+    <!-- Alert : Type a -->
+    <alert-a>
+        <div id="msg-${totalMessages}" class="chat-message alert flex animate__animated ${animationIn}">
+        <alert-box class="${listener}" direction="${direction}">
+            <alert-content>
+                ${alertText}
+            </alert-content>
+        </alert-box>
+        </div>
+    </alert-a>
+    <!-- Alert : Type b -->
+    <alert-b>
+        <div id="msg-${totalMessages}" class="chat-message alert flex animate__animated ${animationIn}">
+        <alert-box class="b ${listener}" direction="${direction}">
+            <alert-content-b>
+                ${alertText}
+            </alert-content-b>
+        </alert-box>
+        </div>
+    </alert-b>
+    <!-- osu! Embed : Type A -->
+    <osu-embed-a>
+        <div data-sender="${uId}" data-msgId="${msgId}" id="msg-${totalMessages}" class="chat-message osu-embed flex ${userRole} animate__animated ${animationIn}">
+            <message-box>
+                <embed-user class="flex align-center">
+                    <embed-role role="${userRole}">${roleIcon}</embed-role>
+                    <separator role="${userRole}"></separator>
+                    <p class="username">${username}</p>
+                </embed-user>
+                <osu-embed-wrapper-a class="flex relative">
+                    <img src="${thumbnail}" alt="Map thumbnail" class="embed-thumbnail-a">
+                    <embed-content-a>
+                        <beatmap-a class="flex flex-column relative" style="--img: url('${background}');">
+                            <row-wrapper-a class="flex flex-column">
+                                <title-wrapper-a class="flex gap-10 align-center">
+                                    <overflow-text scroll="${scroll}"><p class="title-a">${title}</p></overflow-text>
+                                    <ranked-status class="${status}">${status}</ranked-status>
+                                </title-wrapper-a>
+                                <overflow-text scroll="${scroll}"><p class="artist-a">by ${artist}</p></overflow-text>
+                                <overflow-text scroll="${scroll}"><p class="diff-name-a">[${diff_name}]</p></overflow-text>
+                            </row-wrapper-a>
+                            <beatmap-info-a class="grid gap-5">
+                                <info-pill-a>
+                                    ${stat1Icon}
+                                    <p>${stat1Text}</p>
+                                </info-pill-a>
+                                <info-pill-a>
+                                    ${stat2Icon}
+                                    <p>${stat2Text}</p>
+                                </info-pill-a>
+                                <info-pill-a>
+                                    ${stat3Icon}
+                                    <p>${stat3Text}</p>
+                                </info-pill-a>
+                                <info-pill-a>
+                                    ${stat4Icon}
+                                    <p>${stat4Text}</p>
+                                </info-pill-a>
+                            </beatmap-info-a>
+                        </beatmap-a>
+                    </embed-content-a>
+                </osu-embed-wrapper-a>
+            </message-box>
+        </div>
+    </osu-embed-a>
+    <!-- osu! Embed : Type B -->
+    <osu-embed-b>
+        <div data-sender="${uId}" data-msgId="${msgId}" id="msg-${totalMessages}" class="chat-message osu-embed flex ${userRole} animate__animated ${animationIn}">
+            <message-box>
+                <embed-user class="flex align-center">
+                    <embed-role role="${userRole}">${roleIcon}</embed-role>
+                    <separator role="${userRole}"></separator>
+                    <p class="username">${username}</p>
+                </embed-user>
+                <osu-embed-wrapper-b class="flex relative">
+                    <img src="${background}" alt="Map background" class="embed-bg-b absolute">
+                    <img src="${thumbnail}" alt="Map thumbnail" class="embed-thumbnail-b relative">
+                    <embed-content-b class="flex flex-column relative">
+                        <row-wrapper-b class="flex">
+                            <title-wrapper-b class="flex align-center gap-5">
+                                <overflow-text scroll="${scroll}"><p class="title-b">${title}</p></overflow-text>
+                                <overflow-text scroll="${scroll}"><p class="diff-name-b">[${diff_name}]</p></overflow-text>
+                            </title-wrapper-b>
+                            <ranked-status class="${status}">${status}</ranked-status>
+                        </row-wrapper-b>
+                        <overflow-text scroll="${scroll}"><p class="artist-b">${artist}</p></overflow-text>
+                        <beatmap-info-b class="flex">
+                            <info-pill-b class="flex">
+                                ${stat1Icon}
+                                <p>${stat1Text}</p>
+                            </info-pill-b>
+                            <info-pill-b class="flex">
+                                ${stat2Icon}
+                                <p>${stat2Text}</p>
+                            </info-pill-b>
+                            <info-pill-b class="flex">
+                                ${stat3Icon}
+                                <p>${stat3Text}</p>
+                            </info-pill-b>
+                            <info-pill-b class="flex">
+                                ${stat4Icon}
+                                <p>${stat4Text}</p>
+                            </info-pill-b>
+                        </beatmap-info-b>
+                    </embed-content-b>
+                </osu-embed-wrapper-b>
+            </message-box>
+        </div>
+    </osu-embed-b>
+    <!-- osu! Embed : Type C -->
+    <osu-embed-c>
+        <div data-sender="${uId}" data-msgId="${msgId}" id="msg-${totalMessages}" class="chat-message osu-embed flex ${userRole} animate__animated ${animationIn}">
+            <message-box>
+                <embed-user class="flex align-center">
+                    <embed-role role="${userRole}">${roleIcon}</embed-role>
+                    <separator role="${userRole}"></separator>
+                    <p class="username">${username}</p>
+                </embed-user>
+                <embed-content-c class="flex relative">
+                    <beatmap-c class="flex flex-column gap-5 justify-center relative" style="--img: url('${thumbnail}');">
+                        <title-wrapper-c class="flex gap-10 justify-center relative">
+                            <overflow-text id="title" scroll="${scroll}" style="--i: 0"><p class="title-c">${title}</p></overflow-text>
+                            <p class="embed-c-highlight" style="--i: 1">by</p>
+                            <overflow-text id="artist" scroll="${scroll}" style="--i: 2"><p class="artist-c">${artist}</p></overflow-text>
+                        </title-wrapper-c>
+                        <ranked-status-c class="ranked-status-c absolute ${status}">${status}</ranked-status-c>
+                        <beatmap-info-c class="flex gap-10 justify-center relative">
+                            <info-pill-c>
+                                ${stat1Icon}
+                                <p>${stat1Text}</p>
+                            </info-pill-c>
+                            <diff-name-c class="flex">
+                                <p class="embed-c-highlight" style="margin-right: .25em;">[</p>
+                                <overflow-text id="diffName" scroll="${scroll}"><p class="diff-name-c">${diff_name}</p></overflow-text>
+                                <p class="embed-c-highlight" style="margin-left: .25em;">]</p>
+                            </diff-name-c>
+                            <info-pill-c>
+                                <p>${stat2Text}</p>
+                                ${stat2Icon}
+                            </info-pill-c>
+                        </beatmap-info-c>
+                    </beatmap-c>
+                </embed-content-c>
+            </message-box>
+        </div>
+    </osu-embed-c>
+    <!-- Redeem : Type A -->
+     <redeem-a>
+        <div data-msgId="${msgId}" id="msg-${totalMessages}" class="chat-message redeem flex animate__animated ${animationIn}">
+            <redeem-container-a>
+                ${text}
+            </redeem-container-a>
+        </div>
+     </redeem-a>
+</templates>

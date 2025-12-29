@@ -1,0 +1,1410 @@
+{
+  "fontName": {
+    "group": "Setup",
+    "type": "googleFont",
+    "label": "Select a font: (fonts.google.com)",
+    "value": "Inter"
+  },
+  "fontSize": {
+    "group": "Setup",
+    "type": "number",
+    "label": "Global font size: (px)",
+    "value": 16,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "currencyDisplayType": {
+    "group": "Setup",
+    "type": "dropdown",
+    "label": "User currency type:",
+    "value": "symbol",
+    "options": {
+      "code": "Code (ex. USD)",
+      "symbol": "Symbol (ex. $)"
+    }
+  },
+  "currencyPosition": {
+    "group": "Setup",
+    "type": "dropdown",
+    "label": "User currency position:",
+    "value": "left",
+    "options": {
+      "left": "Left of amount",
+      "right": "Right of amount"
+    }
+  },
+  "chatDirection": {
+    "group": "Setup",
+    "type": "dropdown",
+    "label": "Chat direction:",
+    "value": "column",
+    "options": {
+      "column": "Ascending",
+      "column-reverse": "Descending"
+    }
+  },
+  "chatGap": {
+    "group": "Setup",
+    "type": "number",
+    "label": "Message gap: (px)",
+    "value": 20,
+    "min": 0,
+    "step": 1
+  },
+  "chatPadding": {
+    "group": "Setup",
+    "type": "number",
+    "label": "Chat padding: (px)",
+    "value": 50,
+    "min": 0,
+    "step": 1
+  },
+  "msgLimit": {
+    "group": "Setup",
+    "type": "number",
+    "label": "# of messages visible simultaneously:",
+    "value": 10,
+    "min": 0,
+    "max": 128,
+    "step": 1
+  },
+  "hideAfter": {
+    "group": "Setup",
+    "type": "number",
+    "label": "Hide after #s (999 to disable)",
+    "value": 999
+  },
+  "smoothScrollDuration": {
+    "group": "Setup",
+    "type": "number",
+    "label": "Smooth scroll duration:(ms, 0 to disable)",
+    "value": 150,
+    "min": 0,
+    "step": 10
+  },
+  "ignoredUsers": {
+    "group": "Setup",
+    "type": "text",
+    "label": "Ignored users: (separated by comma)",
+    "value": "some-user, some-bot"
+  },
+  "pronounsNotice": {
+    "group": "Setup",
+    "type": "hidden",
+    "label": "Anyone who wants to display"
+  },
+  "pronounsNotice1": {
+    "group": "Setup",
+    "type": "hidden",
+    "label": "pronouns next to their name"
+  },
+  "pronounsNotice2": {
+    "group": "Setup",
+    "type": "hidden",
+    "label": "needs to login and set them on"
+  },
+  "pronounsNotice3": {
+    "group": "Setup",
+    "type": "hidden",
+    "label": "https://pronouns.alejo.io"
+  },
+  "displayPronouns": {
+    "group": "Setup",
+    "type": "checkbox",
+    "value": false,
+    "label": "Show pronouns"
+  },
+  "showCommands": {
+    "group": "Setup",
+    "type": "checkbox",
+    "value": true,
+    "label": "Show messages starting with \"!\""
+  },
+  "animIn": {
+    "group": "Animations",
+    "type": "dropdown",
+    "label": "Animation in:",
+    "value": "fadeInUp",
+    "options": {
+      "none": "None",
+      "backInDown": "Back in - Down",
+      "backInLeft": "Back in - Left",
+      "backInRight": "Back in - Right",
+      "backInUp": "Back in - Up",
+      "bounceIn": "Bounce in",
+      "bounceInDown": "Bounce in - Down",
+      "bounceInLeft": "Bounce in - Left",
+      "bounceInRight": "Bounce in - Right",
+      "bounceInUp": "Bounce in - Up",
+      "fadeIn": "Fade in",
+      "fadeInDown": "Fade in - Down",
+      "fadeInDownBig": "Fade in - Down big",
+      "fadeInLeft": "Fade in - Left",
+      "fadeInLeftBig": "Fade in - Left big",
+      "fadeInRight": "Fade in - Right",
+      "fadeInRightBig": "Fade in - Right big",
+      "fadeInUp": "Fade in - Up",
+      "fadeInUpBig": "Fade in - Up big",
+      "fadeInTopLeft": "Fade in - Top left",
+      "fadeInTopRight": "Fade in - Top right",
+      "fadeInBottomLeft": "Fade in - Bottom left",
+      "fadeInBottomRight": "Fade in - Bottom right",
+      "flip": "Flip",
+      "flipInX": "Flip in X",
+      "flipInY": "Flip in Y",
+      "lightSpeedInRight": "Lightspeed in - Right",
+      "lightSpeedInLeft": "Lightspeed in - Left",
+      "rotateIn": "Rotate in",
+      "rotateInDownLeft": "Rotate in - Left",
+      "rotateInDownRight": "Rotate in - Right",
+      "rotateInUpLeft": "Rotate in - Up left",
+      "rotateInUpRight": "Rotate in - Up right",
+      "jackInTheBox": "Jack in the box",
+      "rollIn": "Roll in",
+      "zoomIn": "Zoom in",
+      "zoomInDown": "Zoom in - Down",
+      "zoomInLeft": "Zoom in - Left",
+      "zoomInRight": "Zoom in - Right",
+      "zoomInUp": "Zoom in - Up",
+      "slideInDown": "Slide in - Down",
+      "slideInLeft": "Slide in - Left",
+      "slideInRight": "Slide in - Right",
+      "slideInUp": "Slide in - Up"
+    }
+  },
+  "animOut": {
+    "group": "Animations",
+    "type": "dropdown",
+    "label": "Animation out:",
+    "value": "fadeOutUp",
+    "options": {
+      "none": "None",
+      "backOutDown": "Back out - Down",
+      "backOutLeft": "Back out - Left",
+      "backOutRight": "Back out - Right",
+      "backOutUp": "Back out - Up",
+      "bounceOut": "Bounce out",
+      "bounceOutDown": "Bounce out - Down",
+      "bounceOutLeft": "Bounce out - Left",
+      "bounceOutRight": "Bounce out - Right",
+      "bounceOutUp": "Bounce out - Up",
+      "fadeOut": "Fade out",
+      "fadeOutDown": "Fade out - Down",
+      "fadeOutDownBig": "Fade out - Down big",
+      "fadeOutLeft": "Fade out - Left",
+      "fadeOutLeftBig": "Fade out - Left big",
+      "fadeOutRight": "Fade out - Right",
+      "fadeOutRightBig": "Fade out - Right big",
+      "fadeOutUp": "Fade out - Up",
+      "fadeOutUpBig": "Fade out - Up big",
+      "fadeOutTopLeft": "Fade out - Top left",
+      "fadeOutTopRight": "Fade out - Top right",
+      "fadeOutBottomLeft": "Fade out - Bottom left",
+      "fadeOutBottomRight": "Fade out - Bottom right",
+      "flipOutX": "Flip out X",
+      "flipOutY": "Fade out Y",
+      "lightSpeedOutRight": "Lightspeed out - Right",
+      "lightSpeedOutLeft": "Lightspeed out - Left",
+      "rotateOut": "Rotate out",
+      "rotateOutDownLeft": "Rotate out - Left",
+      "rotateOutDownRight": "Rotate out - Right",
+      "rotateOutUpLeft": "Rotate out - Up left",
+      "rotateOutUpRight": "Rotate out - Up right",
+      "hinge": "Hinge",
+      "rollOut": "Roll out",
+      "zoomOut": "Zoom out",
+      "zoomOutDown": "Zoom out - Down",
+      "zoomOutLeft": "Zoom out - Left",
+      "zoomOutRight": "Zoom out - Right",
+      "zoomOutUp": "Zoom out - Up",
+      "slideOutDown": "Slide out - Down",
+      "slideOutLeft": "Slide out - Left",
+      "slideOutRight": "Slide out - Right",
+      "slideOutUp": "Slide out - Up"
+    }
+  },
+  "animateDuration": {
+    "group": "Animations",
+    "type": "number",
+    "label": "Animation duration: (ms)",
+    "value": 500,
+    "min": 0,
+    "step": 100
+  },
+  "autoDelete": {
+    "group": "Auto Delete Messages",
+    "type": "checkbox",
+    "value": true,
+    "label": "Delete messages before they get cut off"
+  },
+  "autoDeleteDistance": {
+    "group": "Auto Delete Messages",
+    "type": "number",
+    "label": "Auto delete distance: (px)",
+    "value": 250,
+    "min": 0,
+    "step": 1
+  },
+  "usernameFontSize": {
+    "group": "Usernames",
+    "type": "number",
+    "label": "Username font size: (px)",
+    "value": 14,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "usernameFontWeight": {
+    "group": "Usernames",
+    "type": "slider",
+    "label": "Username font weight:",
+    "value": 700,
+    "min": 0,
+    "max": 1000,
+    "step": 100
+  },
+  "usernameLetterSpacing": {
+    "group": "Usernames",
+    "type": "slider",
+    "label": "Username letter spacing:",
+    "value": 0.1,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  "usernameTextTransform": {
+    "group": "Usernames",
+    "type": "dropdown",
+    "label": "Username text transform:",
+    "value": "uppercase",
+    "options": {
+      "none": "None",
+      "lowercase": "lowercase",
+      "capitalize": "Capitalize",
+      "uppercase": "UPPERCASE"
+    }
+  },
+  "usernameColorSource": {
+    "group": "Usernames",
+    "type": "dropdown",
+    "label": "Username color source:",
+    "value": "twitch",
+    "options": {
+      "static": "Static color",
+      "role": "Role color",
+      "twitch": "Twitch chat color"
+    }
+  },
+  "staticColor": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "Static color",
+    "value": "#FFFFFF"
+  },
+  "roleColorNotice": {
+    "group": "Usernames",
+    "type": "hidden",
+    "label": "Role Colors"
+  },
+  "regularColor": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "Regular viewer color",
+    "value": "#FFFFFF"
+  },
+  "subscriberColor": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "Subscriber color",
+    "value": "#c52ffe"
+  },
+  "vipColor": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "VIP color",
+    "value": "#ee28cb"
+  },
+  "moderatorColor": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "Moderator color",
+    "value": "#10dc10"
+  },
+  "broadcasterColor": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "Broadcaster color",
+    "value": "#ed1b53"
+  },
+  "mentionColorSource": {
+    "group": "Usernames",
+    "type": "dropdown",
+    "label": "Mention color source:",
+    "value": "static",
+    "options": {
+      "static": "Static color",
+      "role": "Role color",
+      "twitch": "Twitch chat color (Sender's)"
+    }
+  },
+  "mentionBG": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "Static mention BG",
+    "value": "#fff"
+  },
+  "mentionText": {
+    "group": "Usernames",
+    "type": "colorpicker",
+    "label": "Static mention text",
+    "value": "#000"
+  },
+  "displayMessages": {
+    "group": "Messages",
+    "type": "checkbox",
+    "label": "Show messages",
+    "value": true
+  },
+  "msgStyle": {
+    "group": "Messages",
+    "type": "dropdown",
+    "label": "Message style:",
+    "value": "regular",
+    "options": {
+      "regular": "Regular",
+      "compact": "Compact (Inline)",
+      "compact-stacked": "Compact (Stacked)"
+    }
+  },
+  "msgWidth": {
+    "group": "Messages",
+    "type": "dropdown",
+    "label": "Message width:",
+    "value": "fit-content",
+    "options": {
+      "100%": "To 100% of widget width",
+      "fit-content": "To fit message width"
+    }
+  },
+  "msgAlignment": {
+    "group": "Messages",
+    "type": "dropdown",
+    "label": "Message alignment:",
+    "value": "flex-end",
+    "options": {
+      "flex-start": "Left",
+      "center": "Center",
+      "flex-end": "Right"
+    }
+  },
+  "msgContentAlignment": {
+    "group": "Messages",
+    "type": "dropdown",
+    "label": "Message content alignment:",
+    "value": "flex-start",
+    "options": {
+      "flex-start": "Left",
+      "center": "Center",
+      "flex-end": "Right"
+    }
+  },
+  "msgBorderRadius": {
+    "group": "Messages",
+    "type": "slider",
+    "label": "Message corner radius:",
+    "value": 8,
+    "min": 0,
+    "max": 48,
+    "step": 1
+  },
+  "displayReplies": {
+    "group": "Messages",
+    "type": "checkbox",
+    "label": "Show replies",
+    "value": true
+  },
+  "roleBgColor": {
+    "group": "Messages",
+    "type": "colorpicker",
+    "label": "Role BG color:",
+    "value": "#00000040"
+  },
+  "msgBgColor": {
+    "group": "Messages",
+    "type": "colorpicker",
+    "label": "Message BG color:",
+    "value": "#00000080"
+  },
+  "msgTextColor": {
+    "group": "Messages",
+    "type": "colorpicker",
+    "label": "Message text color:",
+    "value": "#FFFFFF"
+  },
+  "msgFontSize": {
+    "group": "Messages",
+    "type": "number",
+    "label": "Message font size: (px)",
+    "value": 16,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "msgFontWeight": {
+    "group": "Messages",
+    "type": "slider",
+    "label": "Message font weight:",
+    "value": 600,
+    "min": 0,
+    "max": 1000,
+    "step": 100
+  },
+  "msgLetterSpacing": {
+    "group": "Messages",
+    "type": "slider",
+    "label": "Message letter spacing:",
+    "value": 0.03,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  "msgWordBreak": {
+    "group": "Messages",
+    "type": "dropdown",
+    "label": "Message word break:",
+    "value": "break-word",
+    "options": {
+      "break-word": "Break word",
+      "break-all": "Break all"
+    }
+  },
+  "emoteSize": {
+    "group": "Messages",
+    "type": "number",
+    "label": "Emote size: (px)",
+    "value": 24,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "emoteOnlySize": {
+    "group": "Messages",
+    "type": "number",
+    "label": "Emote only size: (px)",
+    "value": 48,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "emoteQuality": {
+    "group": "Messages",
+    "type": "dropdown",
+    "label": "Emote quality:",
+    "value": "4",
+    "options": {
+      "1": "Low",
+      "2": "Medium",
+      "4": "High"
+    }
+  },
+  "emoteOnlyQuality": {
+    "group": "Messages",
+    "type": "dropdown",
+    "label": "Emote only quality:",
+    "value": "4",
+    "options": {
+      "1": "Low",
+      "2": "Medium",
+      "4": "High"
+    }
+  },
+  "subscriberRoleIcon": {
+    "group": "Role Icons",
+    "type": "dropdown",
+    "label": "Subscriber icon source:",
+    "value": "badge",
+    "options": {
+      "none": "None",
+      "avatar": "Avatar",
+      "badge": "Badge",
+      "icon": "Icon"
+    }
+  },
+  "vipRoleIcon": {
+    "group": "Role Icons",
+    "type": "dropdown",
+    "label": "VIP icon source:",
+    "value": "icon",
+    "options": {
+      "none": "None",
+      "avatar": "Avatar",
+      "badge": "Badge",
+      "icon": "Icon"
+    }
+  },
+  "moderatorRoleIcon": {
+    "group": "Role Icons",
+    "type": "dropdown",
+    "label": "Moderator icon source:",
+    "value": "icon",
+    "options": {
+      "none": "None",
+      "avatar": "Avatar",
+      "badge": "Badge",
+      "icon": "Icon"
+    }
+  },
+  "broadcasterRoleIcon": {
+    "group": "Role Icons",
+    "type": "dropdown",
+    "label": "Broadcaster icon source:",
+    "value": "avatar",
+    "options": {
+      "none": "None",
+      "avatar": "Avatar",
+      "badge": "Badge",
+      "icon": "Icon"
+    }
+  },
+  "roleIconSize": {
+    "group": "Role Icons",
+    "type": "number",
+    "label": "Role icon size: (px)",
+    "value": 12,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "badgeSize": {
+    "group": "Role Icons",
+    "type": "number",
+    "label": "Badge/Avatar size: (px)",
+    "value": 30,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "badgeSizeSm": {
+    "group": "Role Icons",
+    "type": "number",
+    "label": "Small badge/avatar size: (px)",
+    "value": 16,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "displayBadges": {
+    "group": "Badges",
+    "type": "checkbox",
+    "label": "Show all badges next to usernames",
+    "value": false
+  },
+  "removeSubBadge": {
+    "group": "Badges",
+    "type": "checkbox",
+    "label": "Remove sub badge from all badges when it's used as a role icon",
+    "value": true
+  },
+  "badgeGap": {
+    "group": "Badges",
+    "type": "number",
+    "label": "Badge gap: (px)",
+    "value": 5,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "displayOsuEmbeds": {
+    "group": "osu! integration",
+    "type": "checkbox",
+    "label": "Show osu! beatmap embeds",
+    "value": false
+  },
+  "embedStyle": {
+    "group": "osu! integration",
+    "type": "dropdown",
+    "label": "Embed style:",
+    "value": "osu-embed-a",
+    "options": {
+      "osu-embed-a": "Type A (osu!web)",
+      "osu-embed-b": "Type B",
+      "osu-embed-c": "Type C"
+    }
+  },
+  "embedOverflowScroll": {
+    "group": "osu! integration",
+    "type": "checkbox",
+    "label": "Scroll text which is too long to display",
+    "value": true
+  },
+  "scrollTime": {
+    "group": "osu! integration",
+    "type": "number",
+    "label": "Scroll time: (s)",
+    "value": 15,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "unsafeNotice": {
+    "group": "osu! integration",
+    "type": "hidden",
+    "label": "These maps may have backgrounds"
+  },
+  "unsafeNotice1": {
+    "group": "osu! integration",
+    "type": "hidden",
+    "label": "which could get you banned"
+  },
+  "allowUnsafeMaps": {
+    "group": "osu! integration",
+    "type": "checkbox",
+    "label": "Embed graveyarded / pending / wip beatmaps",
+    "value": false
+  },
+  "blacklistedBeatmaps": {
+    "group": "osu! integration",
+    "type": "text",
+    "label": "Blacklisted beatmap sets: (IDs)",
+    "value": "1780095, 1226517"
+  },
+  "blacklistedDifficulties": {
+    "group": "osu! integration",
+    "type": "text",
+    "label": "Blacklisted difficulties: (IDs)",
+    "value": "2962431, 2961052"
+  },
+  "embedAlignment": {
+    "group": "osu! integration",
+    "type": "dropdown",
+    "label": "Embed alignment:",
+    "value": "flex-end",
+    "options": {
+      "flex-start": "Left",
+      "center": "Center",
+      "flex-end": "Right"
+    }
+  },
+  "displayUnicodeMetadata": {
+    "group": "osu! integration",
+    "type": "checkbox",
+    "label": "Show metadata in original language",
+    "value": false
+  },
+  "stat1": {
+    "group": "osu! integration",
+    "type": "dropdown",
+    "label": "Stat 1:",
+    "value": "difficulty_rating",
+    "options": {
+      "ar": "AR",
+      "bpm": "BPM",
+      "cs": "CS",
+      "drain": "HP",
+      "accuracy": "OD",
+      "difficulty_rating": "SR",
+      "total_length": "Length",
+      "max_combo": "Max combo",
+      "creator": "Mapper"
+    }
+  },
+  "stat2": {
+    "group": "osu! integration",
+    "type": "dropdown",
+    "label": "Stat 2:",
+    "value": "bpm",
+    "options": {
+      "ar": "AR",
+      "bpm": "BPM",
+      "cs": "CS",
+      "drain": "HP",
+      "accuracy": "OD",
+      "difficulty_rating": "SR",
+      "total_length": "Length",
+      "max_combo": "Max combo",
+      "creator": "Mapper"
+    }
+  },
+  "stat3": {
+    "group": "osu! integration",
+    "type": "dropdown",
+    "label": "Stat 3:",
+    "value": "total_length",
+    "options": {
+      "ar": "AR",
+      "bpm": "BPM",
+      "cs": "CS",
+      "drain": "HP",
+      "accuracy": "OD",
+      "difficulty_rating": "SR",
+      "total_length": "Length",
+      "max_combo": "Max combo",
+      "creator": "Mapper"
+    }
+  },
+  "stat4": {
+    "group": "osu! integration",
+    "type": "dropdown",
+    "label": "Stat 4:",
+    "value": "creator",
+    "options": {
+      "ar": "AR",
+      "bpm": "BPM",
+      "cs": "CS",
+      "drain": "HP",
+      "accuracy": "OD",
+      "difficulty_rating": "SR",
+      "total_length": "Length",
+      "max_combo": "Max combo",
+      "creator": "Mapper"
+    }
+  },
+  "displayRedeems": {
+    "group": "Redeems",
+    "type": "checkbox",
+    "label": "Show redeems",
+    "value": true
+  },
+  "redeemText": {
+    "group": "Redeems",
+    "type": "text",
+    "label": "Redeem text:",
+    "value": "<usernameH> redeemed <redeemH>"
+  },
+  "redeemAlignment": {
+    "group": "Redeems",
+    "type": "dropdown",
+    "label": "Redeem alignment:",
+    "value": "center",
+    "options": {
+      "flex-start": "Left",
+      "center": "Center",
+      "flex-end": "Right"
+    }
+  },
+  "redeemBgColor": {
+    "group": "Redeems",
+    "type": "colorpicker",
+    "label": "Redeem BG color:",
+    "value": "#00000040"
+  },
+  "redeemTextColor": {
+    "group": "Redeems",
+    "type": "colorpicker",
+    "label": "Redeem text color:",
+    "value": "#ffffff"
+  },
+  "redeemHighlightColor": {
+    "group": "Redeems",
+    "type": "colorpicker",
+    "label": "Redeem highlight color:",
+    "value": "#f5b042"
+  },
+  "alertStyle": {
+    "group": "Alerts",
+    "type": "dropdown",
+    "label": "Alert style:",
+    "value": "alert-b",
+    "options": {
+      "alert-a": "Type A (Default+ 1.0)",
+      "alert-b": "Type B (Default+ 2.0)"
+    }
+  },
+  "displayFollows": {
+    "type": "checkbox",
+    "label": "Show follows",
+    "value": false,
+    "group": "Alerts"
+  },
+  "displaySubs": {
+    "type": "checkbox",
+    "label": "Show subscriptions",
+    "value": true,
+    "group": "Alerts"
+  },
+  "displayResubs": {
+    "type": "checkbox",
+    "label": "Show Resubscriptions",
+    "value": true,
+    "group": "Alerts"
+  },
+  "displayGifted": {
+    "type": "checkbox",
+    "label": "Show gifted subscriptions (Direct)",
+    "value": true,
+    "group": "Alerts"
+  },
+  "displayBulkGifted": {
+    "type": "checkbox",
+    "label": "Show gifted subscriptions (Bulk)",
+    "value": true,
+    "group": "Alerts"
+  },
+  "displayDonations": {
+    "type": "checkbox",
+    "label": "Show donations",
+    "value": true,
+    "group": "Alerts"
+  },
+  "minDonationAmount": {
+    "group": "Alerts",
+    "type": "number",
+    "label": "Minimum donation amount to display",
+    "value": 1,
+    "min": 0,
+    "step": 1
+  },
+  "displayCheers": {
+    "type": "checkbox",
+    "label": "Show cheers (Bits)",
+    "value": true,
+    "group": "Alerts"
+  },
+  "minCheerAmount": {
+    "group": "Alerts",
+    "type": "number",
+    "label": "Minimum cheer amount to display",
+    "value": 100,
+    "min": 0,
+    "step": 1
+  },
+  "displayRaids": {
+    "type": "checkbox",
+    "label": "Show raids",
+    "value": true,
+    "group": "Alerts"
+  },
+  "alertAlignment": {
+    "group": "Alerts",
+    "type": "dropdown",
+    "label": "Alert alignment:",
+    "value": "flex-end",
+    "options": {
+      "flex-start": "Left",
+      "center": "Center",
+      "flex-end": "Right"
+    }
+  },
+  "alertWidth": {
+    "group": "Alerts",
+    "type": "dropdown",
+    "label": "Alert width:",
+    "value": "fit-content",
+    "options": {
+      "100%": "To 100% of widget width",
+      "fit-content": "To fit alert width"
+    }
+  },
+  "alertDirection": {
+    "group": "Alerts",
+    "type": "dropdown",
+    "label": "Alert direction:",
+    "value": "left",
+    "options": {
+      "left": "Left",
+      "right": "Right",
+      "top": "Top",
+      "bottom": "Bottom"
+    }
+  },
+  "alertBorderRadius": {
+    "group": "Alerts",
+    "type": "slider",
+    "label": "Alert corner radius:",
+    "value": 8,
+    "min": 0,
+    "max": 48,
+    "step": 1
+  },
+  "alertType1": {
+    "group": "Alert Type A Settings",
+    "type": "hidden",
+    "label": "Alert Type A must be selected"
+  },
+  "alertType11": {
+    "group": "Alert Type A Settings",
+    "type": "hidden",
+    "label": "In order for these settings to work"
+  },
+  "highlightFontSize": {
+    "group": "Alert Type A Settings",
+    "type": "number",
+    "label": "Highlight font size: (px)",
+    "value": 16,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "highlightFontWeight": {
+    "group": "Alert Type A Settings",
+    "type": "slider",
+    "label": "Highlight font weight:",
+    "value": 700,
+    "min": 0,
+    "max": 1000,
+    "step": 100
+  },
+  "highlightLetterSpacing": {
+    "group": "Alert Type A Settings",
+    "type": "slider",
+    "label": "Highlight text spacing:",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  "highlightTextTransform": {
+    "group": "Alert Type A Settings",
+    "type": "dropdown",
+    "label": "Highlight text transform:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "lowercase": "lowercase",
+      "capitalize": "Capitalize",
+      "uppercase": "UPPERCASE"
+    }
+  },
+  "usernameHighlightFontSize": {
+    "group": "Alert Type A Settings",
+    "type": "number",
+    "label": "Username highlight font size: (px)",
+    "value": 18,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "usernameHighlightFontWeight": {
+    "group": "Alert Type A Settings",
+    "type": "slider",
+    "label": "Username highlight font weight:",
+    "value": 600,
+    "min": 0,
+    "max": 1000,
+    "step": 100
+  },
+  "usernameHighlightLetterSpacing": {
+    "group": "Alert Type A Settings",
+    "type": "slider",
+    "label": "Username highlight text spacing:",
+    "value": 0.1,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  "usernameHighlightTextTransform": {
+    "group": "Alert Type A Settings",
+    "type": "dropdown",
+    "label": "Username highlight text transform:",
+    "value": "uppercase",
+    "options": {
+      "none": "None",
+      "lowercase": "lowercase",
+      "capitalize": "Capitalize",
+      "uppercase": "UPPERCASE"
+    }
+  },
+  "followColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Follow color:",
+    "value": "#edaa1b"
+  },
+  "followTextColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Follow text color:",
+    "value": "#ffffff"
+  },
+  "subColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Sub color:",
+    "value": "#8a2be2"
+  },
+  "subTextColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Sub text color:",
+    "value": "#ffffff"
+  },
+  "tipColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Tip color:",
+    "value": "#7ae759"
+  },
+  "tipTextColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Tip text color:",
+    "value": "#ffffff"
+  },
+  "cheerColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Cheer color:",
+    "value": "#1bcded"
+  },
+  "cheerTextColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Cheer text color:",
+    "value": "#ffffff"
+  },
+  "raidColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Raid color:",
+    "value": "#ed1b53"
+  },
+  "raidTextColor": {
+    "group": "Alert Type A Settings",
+    "type": "colorpicker",
+    "label": "Raid text color:",
+    "value": "#ffffff"
+  },
+  "alertTypeB": {
+    "group": "Alert Type B Settings",
+    "type": "hidden",
+    "label": "Alert Type B must be selected"
+  },
+  "alertTypeB1": {
+    "group": "Alert Type B Settings",
+    "type": "hidden",
+    "label": "In order for these settings to work"
+  },
+  "highlightFontSizeV2": {
+    "group": "Alert Type B Settings",
+    "type": "number",
+    "label": "Highlight font size: (px)",
+    "value": 16,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "highlightFontWeightV2": {
+    "group": "Alert Type B Settings",
+    "type": "slider",
+    "label": "Highlight font weight:",
+    "value": 700,
+    "min": 0,
+    "max": 1000,
+    "step": 100
+  },
+  "highlightLetterSpacingV2": {
+    "group": "Alert Type B Settings",
+    "type": "slider",
+    "label": "Highlight text spacing:",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  "highlightTextTransformV2": {
+    "group": "Alert Type B Settings",
+    "type": "dropdown",
+    "label": "Highlight text transform:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "lowercase": "lowercase",
+      "capitalize": "Capitalize",
+      "uppercase": "UPPERCASE"
+    }
+  },
+  "usernameHighlightFontSizeV2": {
+    "group": "Alert Type B Settings",
+    "type": "number",
+    "label": "Username highlight font size: (px)",
+    "value": 12,
+    "min": 0,
+    "max": 256,
+    "step": 1
+  },
+  "usernameHighlightFontWeightV2": {
+    "group": "Alert Type B Settings",
+    "type": "slider",
+    "label": "Username highlight font weight:",
+    "value": 900,
+    "min": 0,
+    "max": 1000,
+    "step": 100
+  },
+  "usernameHighlightLetterSpacingV2": {
+    "group": "Alert Type B Settings",
+    "type": "slider",
+    "label": "Username highlight text spacing:",
+    "value": 0.1,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  "usernameHighlightTextTransformV2": {
+    "group": "Alert Type B Settings",
+    "type": "dropdown",
+    "label": "Username highlight text transform:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "lowercase": "lowercase",
+      "capitalize": "Capitalize",
+      "uppercase": "UPPERCASE"
+    }
+  },
+  "followColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Follow color:",
+    "value": "#FFD170"
+  },
+  "followTextColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Follow text color:",
+    "value": "#000000aa"
+  },
+  "subColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Sub color:",
+    "value": "#a84bff"
+  },
+  "subTextColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Sub text color:",
+    "value": "#000000aa"
+  },
+  "tipColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Tip color:",
+    "value": "#B2FFA0"
+  },
+  "tipTextColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Tip text color:",
+    "value": "#000000aa"
+  },
+  "cheerColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Cheer color:",
+    "value": "#90ffdb"
+  },
+  "cheerTextColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Cheer text color:",
+    "value": "#000000aa"
+  },
+  "raidColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Raid color:",
+    "value": "#FF4778"
+  },
+  "raidTextColorV2": {
+    "group": "Alert Type B Settings",
+    "type": "colorpicker",
+    "label": "Raid text color:",
+    "value": "#000000aa"
+  },
+  "followText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Follow:",
+    "value": "<usernameH> just followed!"
+  },
+  "subText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Sub:",
+    "value": "<usernameH> just subscribed!"
+  },
+  "resubText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Resub:",
+    "value": "<usernameH> resubscribed for <amountH> months!"
+  },
+  "giftedSubText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Gifted sub:",
+    "value": "<senderH> gifted a sub to <recipientH>!"
+  },
+  "giftedSubsText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Gifted subs:",
+    "value": "<usernameH> gifted <amountH> subs!"
+  },
+  "tipText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Tip:",
+    "value": "<usernameH> donated <amountH>!"
+  },
+  "cheerText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Cheer:",
+    "value": "<usernameH> cheered X<amountH>!"
+  },
+  "raidText": {
+    "group": "Alert Text",
+    "type": "text",
+    "label": "Raid:",
+    "value": "<usernameH> is raiding with <amountH> viewers!"
+  },
+  "followSound": {
+    "type": "sound-input",
+    "label": "Follow sound",
+    "value": "https://cdn.streamelements.com/static/alertbox/default.ogg",
+    "group": "Sound"
+  },
+  "followSoundVolume": {
+    "type": "slider",
+    "label": "Follow sound volume",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.05,
+    "group": "Sound"
+  },
+  "subSound": {
+    "type": "sound-input",
+    "label": "Sub sound",
+    "value": "https://cdn.streamelements.com/static/alertbox/default.ogg",
+    "group": "Sound"
+  },
+  "subSoundVolume": {
+    "type": "slider",
+    "label": "Sub sound volume",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.05,
+    "group": "Sound"
+  },
+  "tipSound": {
+    "type": "sound-input",
+    "label": "Tip sound",
+    "value": "https://cdn.streamelements.com/static/alertbox/default.ogg",
+    "group": "Sound"
+  },
+  "tipSoundVolume": {
+    "type": "slider",
+    "label": "Tip sound volume",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.05,
+    "group": "Sound"
+  },
+  "cheerSound": {
+    "type": "sound-input",
+    "label": "Cheer sound",
+    "value": "https://cdn.streamelements.com/static/alertbox/default.ogg",
+    "group": "Sound"
+  },
+  "cheerSoundVolume": {
+    "type": "slider",
+    "label": "Cheer sound volume",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.05,
+    "group": "Sound"
+  },
+  "raidSound": {
+    "type": "sound-input",
+    "label": "Raid sound",
+    "value": "https://cdn.streamelements.com/static/alertbox/default.ogg",
+    "group": "Sound"
+  },
+  "raidSoundVolume": {
+    "type": "slider",
+    "label": "Raid sound volume",
+    "value": 0,
+    "min": 0,
+    "max": 1,
+    "step": 0.05,
+    "group": "Sound"
+  },
+  "livePreview": {
+    "group": "Live Preview",
+    "type": "checkbox",
+    "label": "Live preview (disable before use)",
+    "value": true
+  },
+  "regularMessage": {
+    "group": "Live Preview",
+    "type": "button",
+    "label": "Regular",
+    "value": "Regular Message"
+  },
+  "subscriberMessage": {
+    "group": "Live Preview",
+    "type": "button",
+    "label": "Subscriber",
+    "value": "Subscriber Message"
+  },
+  "vipMessage": {
+    "group": "Live Preview",
+    "type": "button",
+    "label": "VIP",
+    "value": "VIP Message"
+  },
+  "moderatorMessage": {
+    "group": "Live Preview",
+    "type": "button",
+    "label": "Moderator",
+    "value": "Moderator Message"
+  },
+  "broadcasterMessage": {
+    "group": "Live Preview",
+    "type": "button",
+    "label": "Broadcaster",
+    "value": "Broadcaster Message"
+  },
+  "emoteOnlyMessage": {
+    "group": "Live Preview",
+    "type": "button",
+    "label": "Emote Only",
+    "value": "Emote Only Message"
+  },
+  "replyMessage": {
+    "group": "Live Preview",
+    "type": "button",
+    "label": "Reply",
+    "value": "Reply Message"
+  },
+  "customLivePreviewMsg": {
+    "group": "Live Preview",
+    "type": "hidden",
+    "label": "",
+    "value": true
+  },
+  "checkForUpdatesOnWidgetLoad": {
+    "group": "Check for updates",
+    "type": "checkbox",
+    "label": "Check for updates when the widget loads",
+    "value": true
+  },
+  "checkForUpdates": {
+    "group": "Check for updates",
+    "type": "button",
+    "label": "Check for updates"
+  },
+  "widgetVersion": {
+    "group": "Check for updates",
+    "type": "hidden",
+    "label": "",
+    "value": "2.0"
+  }
+}
