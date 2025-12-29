@@ -169,5 +169,6 @@
   "customLivePreviewMsg": true,
   "checkForUpdatesOnWidgetLoad": true,
   "checkForUpdates": "",
-  "widgetVersion": "2.0"
+  "widgetVersion": "2.0",
+  "changelog": ""
 }
