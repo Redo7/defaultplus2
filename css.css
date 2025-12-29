@@ -1098,6 +1098,7 @@ beatmap-c::before{
   mask-image: linear-gradient(90deg, #000, transparent);
   border-radius: 0.5rem;
   background-size: cover;
+  background-position-y: 50%;
   
   position: absolute;
   top: 0;
