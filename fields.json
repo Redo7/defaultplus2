@@ -1406,5 +1406,11 @@
     "type": "hidden",
     "label": "",
     "value": "2.0"
+  },
+  "changelog": {
+    "group": "Check for updates",
+    "type": "hidden",
+    "label": "",
+    "value": ""
   }
 }
